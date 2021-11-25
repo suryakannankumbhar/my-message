@@ -1,0 +1,220 @@
+/* Global */
+
+* {
+    font-family: Avenir, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
+        Helvetica Neue, Arial, Noto Sans, sans-serif, Apple Color Emoji,
+        Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --login-bg-color: #b3efb2;
+    --login-button-color: #001a23;
+    --main-bg-color: #b3efb2;
+    --primary-color-one: #e8f1f2;
+    --primary-color-two: #7a9e7e;
+}
+
+/* Chats Page */
+
+.chats-page {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100vw;
+    height: 100vh;
+}
+
+.nav-bar {
+    width: 100%;
+    height: 66px;
+    background-color: var(--main-bg-color);
+    /* border: 2px solid black; */
+}
+
+.logo-tab {
+    position: absolute;
+    left: 22px;
+    top: 12px;
+    font-size: 32px;
+    font-weight: 700;
+    color: black;
+}
+
+.logout-tab {
+    position: absolute;
+    top: 22px;
+    right: 22px;
+    color: black;
+    cursor: pointer;
+}
+
+::-webkit-scrollbar {
+    width: 0; /* Remove scrollbar space */
+    background: transparent; /* Optional: just make scrollbar invisible */
+}
+
+/* Login Page */
+
+#login-page {
+    background-color: var(--login-bg-color);
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+}
+
+#login-card {
+    position: relative;
+    top: calc(50vh - 144px);
+    left: calc(50vw - 210px);
+    padding-top: 36px;
+    padding-bottom: 66px;
+    width: 420px;
+    text-align: center;
+    border-radius: 22px;
+}
+
+.login-button {
+    cursor: pointer;
+    padding: 12px;
+    border-radius: 12px;
+    display: inline-block;
+}
+
+.google {
+    background-color: var(--login-button-color);
+    color: white;
+}
+
+#loading-container {
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+}
+
+#loading-icon {
+    font-size: 66px;
+    position: relative;
+    left: calc(50vw - 33px);
+    top: calc(50vh - 22px);
+}
+
+.app-name {
+    font-size: 55px;
+    color: black;
+}
+
+.ce-chat-card {
+    background-color: var(--primary-color-one) !important;
+    border-radius: 15px !important;
+    margin: 10px 15px !important;
+    box-shadow: 0px 0px 10px 2.5px black;
+}
+
+.ce-primary-button {
+    background-color: #ff61ab !important;
+    color: black !important;
+    box-shadow: 0px 0px 10px 2.5px black;
+}
+#ce-send-message-button {
+    background-color: #ff61ab !important;
+    color: black !important;
+    box-shadow: 0px 0px 10px 2.5px black;
+}
+
+.ce-chat-feed-container,
+.ce-chat-title-container,
+.ql-toolbar {
+    background-color: var(--main-bg-color) !important;
+}
+
+.ql-editor {
+    border: 2px solid black;
+}
+
+#ce-delete-chat-button {
+    border: none !important;
+}
+
+.ce-chat-feed-container {
+    box-shadow: inset 0px 0px 10px 2.5px black;
+}
+
+.ce-chat-title-container {
+    box-shadow: 0px 0px 5px 0.5px black;
+    /* border: 5px solid black; */
+}
+
+.ce-chat-title-text,
+.ce-chat-subtitle-text {
+    color: black;
+}
+
+.ce-active-chat-card {
+    background-color: var(--primary-color-two) !important;
+}
+
+.ce-message-bubble.ce-my-message-bubble {
+    margin-right: 10px !important;
+    background-color: #ff6978 !important;
+    box-shadow: 0px 0px 10px 0.5px black;
+    margin-bottom: 5px;
+}
+
+.ce-avatar,
+.ce-message-bubble.ce-their-message-bubble {
+    margin-left: 10px !important;
+    background-color: #f7fcb9 !important;
+    margin-bottom: 5px;
+}
+.ce-message-bubble.ce-their-message-bubble {
+    box-shadow: 0px 0px 10px 0.5px black;
+}
+
+.ce-avatar {
+    box-shadow: inset 0px 0px 5px 0.5px black;
+}
+
+.ce-person-text {
+    margin-left: 10px !important;
+}
+
+.ce-input.ce-autocomplete-input {
+    border: 2px solid black !important;
+    margin-bottom: 5px !important;
+}
+
+.ql-toolbar.ql-snow {
+    box-shadow: inset 0px 0px 5px 0.5px black;
+}
+
+.ce-chat-subtitle-text.ce-chat-subtitle-message {
+    width: 50%;
+}
+
+.ce-chats-container {
+    border: 5px solid black;
+    border-radius: 0 !important;
+}
+
+.ce-settings {
+    border: 5px solid black !important;
+}
+
+#ce-ice-breaker-text {
+    color: black !important;
+}
+
+.ce-delete-chat {
+    border: none !important;
+}
+
+.login-button.google {
+    margin-top: 15px;
+}
