@@ -11,7 +11,7 @@ export default function Login() {
         <div id='login-page'>
             <div id='login-card'>
                 <h2>
-                    Welcome to <span className='app-name'>MyMessage</span>
+                    Welcome to <span className='app-name'>WeMessage</span>
                 </h2>
 
                 <div

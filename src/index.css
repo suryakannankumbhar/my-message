@@ -106,7 +106,7 @@
 }
 
 .app-name {
-    font-size: 55px;
+    font-size: 75px;
     color: black;
 }
 
@@ -156,12 +156,16 @@
     color: black;
 }
 
+.ce-chat-subtitle-text {
+    color: black !important;
+}
+
 .ce-active-chat-card {
     background-color: var(--primary-color-two) !important;
 }
 
 .ce-message-bubble.ce-my-message-bubble {
-    margin-right: 10px !important;
+    margin-right: 20px !important;
     background-color: #ff6978 !important;
     box-shadow: 0px 0px 10px 0.5px black;
     margin-bottom: 5px;
@@ -169,7 +173,7 @@
 
 .ce-avatar,
 .ce-message-bubble.ce-their-message-bubble {
-    margin-left: 10px !important;
+    margin-left: 20px !important;
     background-color: #f7fcb9 !important;
     margin-bottom: 5px;
 }
@@ -217,4 +221,19 @@
 
 .login-button.google {
     margin-top: 15px;
+}
+@media only screen and (max-width: 580px) {
+    .chats-page {
+        display: none;
+    }
+    .alert-message {
+        font-size: 50px;
+        text-align: center;
+        justify-content: center;
+        -ms-transform: translateY(10%);
+        transform: translateY(10%);
+    }
+    body {
+        background-color: var(--main-bg-color);
+    }
 }
